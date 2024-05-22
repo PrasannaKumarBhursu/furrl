@@ -195,7 +195,7 @@ const ProductList: FC<ProductListProps> = ({ title }) => {
         <img src={bannerImage} className={styles.bannerImage} alt="Banner Image" />
 
       </div>
-      {products.length > 0 && (
+      {products?.length > 0 && (
         <div className={styles.productsCountTextContainer}>
           <p className={styles.productsCountTextContainerText}>Shop Products</p>
           <div className={styles.productsCountTextContainerDot}></div>
