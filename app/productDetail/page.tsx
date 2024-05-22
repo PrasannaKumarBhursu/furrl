@@ -10,7 +10,7 @@ import ShareButton from "@/components/ShareButton";
 const ProductDetail = () => {
   let { Product }: any = useProduct()
 
-  if (Product?.length === undefined) {
+  if (Product&&Product?.length === undefined) {
 
     if (typeof window !== 'undefined') {
       Product = JSON.parse(localStorage.getItem("selectedProduct") || "");
