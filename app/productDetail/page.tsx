@@ -11,7 +11,11 @@ const ProductDetail = () => {
   let { Product }: any = useProduct()
 
   if (Product.length === undefined) {
-    Product = JSON.parse(localStorage.getItem("selectedProduct") || "");
+
+    if (typeof window !== 'undefined') {
+      Product = JSON.parse(localStorage.getItem("selectedProduct") || "");
+    }
+    
 
   }
   console.log("(Product", Product);

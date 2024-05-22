@@ -180,8 +180,11 @@ const ProductList: FC<ProductListProps> = ({ title }) => {
 
   const redirectToProductDetail = (product: any) => {
     setProduct(product)
-
-    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("selectedProduct", JSON.stringify(product));
+    }
+    
+    
     router.push(`/productDetail?id=${product.id}`);
 
   }
