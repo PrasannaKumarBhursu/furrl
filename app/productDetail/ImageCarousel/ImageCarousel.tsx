@@ -8,11 +8,11 @@ const ImageCarousel = ({ images }: any) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images?.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images?.length]);
 
   return (
     <div className={styles.imageContianer}>
