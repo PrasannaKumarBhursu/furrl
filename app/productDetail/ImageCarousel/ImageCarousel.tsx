@@ -17,8 +17,8 @@ const ImageCarousel = ({ images }: any) => {
   return (
     <div className={styles.imageContianer}>
       <img
-        src={images[currentImageIndex].src}
-        alt={images[currentImageIndex].title}
+        src={images?.[currentImageIndex].src}
+        alt={images?.[currentImageIndex].title}
         className={styles.images}
       />
 
