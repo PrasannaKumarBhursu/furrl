@@ -33,8 +33,8 @@ const ProductDetail = () => {
               <div>
                 <h1 className={styles.productDetailHeading}>{title}</h1>
                 <div className={styles.productDetailPrices}>
-                  <p className={styles.productDetailPrice}>${price.value}</p>
-                  <p className={styles.productDetailActualPrice}> ${MRP.value}</p>
+                  <p className={styles.productDetailPrice}>${price?.value}</p>
+                  <p className={styles.productDetailActualPrice}> ${MRP?.value}</p>
                   <p className={styles.productDetailDiscount}> {discountPercent}%</p>
                 </div>
               </div>
