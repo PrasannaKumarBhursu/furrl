@@ -1,0 +1,160 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .shareButton {
+    background-color: #3d4650;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .shareButton:hover {
+    background-color: #999fa5;
+  }
+  
+  .resultMessage {
+    margin-top: 10px;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  .shareLinks {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .shareLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .shareLinks a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .shareLinks a:hover::after {
+    opacity: 1;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .closeButton img {
+    display: block;
+  }
+  
+  .copyButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .copyButton img {
+    display: block;
+  }
+  
+  .copyButton span {
+    display: none;
+  }
+  
+  .copyButton.copied span {
+    display: inline;
+  }
+  
+  
+
+  @media (max-width: 1200px) {
+    .modalContent {
+      max-width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modalContent {
+      max-width: 80%;
+    }
+  
+    .shareLinks {
+      gap: 15px;
+    }
+  
+    .closeButton {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modalContent {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .shareLinks {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .closeButton {
+      width: auto;
+      margin-top: 0;
+      padding: 5px;
+    }
+  }
+  

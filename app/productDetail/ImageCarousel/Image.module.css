@@ -1,0 +1,11 @@
+.imageContianer {
+    width: 100%;
+    height: 40vh;
+    padding-top: 30px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}

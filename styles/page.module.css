@@ -1,0 +1,247 @@
+.main {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.bgContainer {
+  width: 100%;
+  max-width: 800px;
+
+}
+
+
+.bannerImage {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+}
+
+.productsCountTextContainer {
+  margin-top: 12px;
+  padding-inline: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.productsCountTextContainerText {
+  color: #2f2f3e;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0px;
+  font-family: "Montserrat", "sans-serif";
+  line-height: 1.5;
+}
+
+.productsCountTextContainerDot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: rgb(203, 213, 225);
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: left;
+}
+
+.productsCountTextContainerCount {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.productsListContainer {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  gap: 12px 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Productcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Productcontainer :hover {
+  cursor: pointer;
+}
+
+.productImage {
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.productListContent {
+  display: flex;
+  padding-left: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 2px !important;
+}
+
+.productListContentTitle {
+  color: #64748b;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.productListContentName {
+  font-size: 11px;
+  color: #001718;
+  font-style: normal;
+  font-family: "montserrat";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.productListContentPricingContainer {
+  font-weight: 600;
+  color: #001718;
+  line-height: 14.63px;
+  display: flex;
+  gap: 4px;
+  font-family: montserrat;
+  font-size: 11px;
+  font-style: normal;
+}
+
+.productListContentMRP {
+  color: #64748bb3;
+  text-decoration-line: line-through;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.productListContentDiscount {
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #7e59e7;
+  margin: 0;
+}
+
+.productDetail {
+  width: 100%;
+}
+
+.imageDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productDetailHeading {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.productDetailPrices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productDetailPrice {
+
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.productDetailActualPrice {
+  font-size: 15px;
+  font-weight: bold;
+  color: #64748b;
+  text-decoration: line-through;
+  margin-right: 6px;
+
+}
+
+.productDetailDiscount {
+  border: 1px solid green;
+  padding: 2px 4px;
+  font-size: 13px;
+
+  border-radius: 3px;
+  color: green;
+}
+
+.productDescriptionContainer {
+  margin-top: 20px;
+}
+
+.productDescriptionTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.productDescriptionText {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.filterList::-webkit-scrollbar {
+  display: none;
+}
+
+.filterList {
+  list-style-type: none;
+  display: flex;
+  overflow-x: auto;
+}
+
+.filterItem {
+  white-space: nowrap;
+  margin-right: 10px;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  color: black;
+
+}
+
+.filterItem.active {
+  color: white;
+  border-color: purple;
+  background-color: purple;
+}

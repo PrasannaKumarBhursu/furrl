@@ -1,0 +1,42 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    background-color: white;
+    padding: 10px 20px;
+    padding-right: 50px;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarLogo {
+    flex-grow: 1;
+    text-align: center;
+    color: purple;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbarIcons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbarIcons {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+  }
+  
