@@ -39,7 +39,7 @@ npm run dev
   
 - **Product Click**: Clicking on a product should redirect the user to the corresponding product details page.
   
-- **Share Button**: Include a share button on each product item that, when clicked, opens a generic share component containing the link to the product details page.
+- **Share Button**: Include a share button on each product item that, when clicked, opens a generic share component containing the link to the product details page. [Adapatable to both Mobile devices and Desktop ]
 
 ## Technologies Used
 
