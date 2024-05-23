@@ -20,8 +20,9 @@ const ProductList: FC<ProductListProps> = ({ title }) => {
   const [bannerImage, setBannerImage] = useState("");
   const [errorInGetByName, setErrorInGetByName] = useState("");
   const [selectedFilter, setSelectedFilter] = useState<string | null>("all");
-  const [totalProdcuts, setTotalProducts] = useState("");
+  const [totalProdcuts, setTotalProducts] = useState(0);
   const [filteredData, setFilteredData] = useState<any[]>([]);
+  const [hasMore, setHasMore] = useState(true);
 
   const fetchProducts = useCallback(async (page: number, filters: any[] = [], isAppending: boolean = false) => {
     setLoading(true);
@@ -65,6 +66,7 @@ const ProductList: FC<ProductListProps> = ({ title }) => {
           setProducts(data.data.getListingProducts.products);
         }
         setTotalProducts(data.data.getListingProducts.totalProducts);
+        setHasMore(data.data.getListingProducts.products.length > 0);
         setError("");
       }
     } catch (error: any) {
@@ -122,11 +124,11 @@ const ProductList: FC<ProductListProps> = ({ title }) => {
   const handleScroll = useCallback(() => {
     const scrollPosition = window.innerHeight + document.documentElement.scrollTop;
     const totalHeight = document.documentElement.offsetHeight;
-    const seventyPercentHeight = 0.9 * totalHeight;
-    if (scrollPosition >= seventyPercentHeight && !loading) {
+    const seventyPercentHeight = 0.7 * totalHeight;
+    if (scrollPosition >= seventyPercentHeight && !loading && hasMore) {
       setPage((prevPage) => prevPage + 1);
     }
-  }, [loading]);
+  }, [loading, hasMore]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
