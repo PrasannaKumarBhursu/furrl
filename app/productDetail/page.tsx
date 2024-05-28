@@ -51,7 +51,7 @@ const ProductDetail = () => {
             <div className={styles.productDescriptionContainer}>
               <h1 className={styles.productDescriptionTitle}>Product Description</h1>
               <p className={styles.productDescriptionText}>
-                New-age consumers aren't boring and basic, so why should they shop boring and basic?
+                <b>" *  This is a hardcoded Text  "</b> New-age consumers aren't boring and basic, so why should they shop boring and basic?
 
                 At Furrl, we are opening up the world of new independent brands to today's savvy consumer. One who wants to browse, be inspired and shop - all in a few clicks and hassle-free.
 
