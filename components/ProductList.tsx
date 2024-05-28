@@ -15,7 +15,7 @@ type ProductListProps = {
 const ProductList: FC<ProductListProps> = ({ title }) => {
   const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [bannerImage, setBannerImage] = useState("");
   const [errorInGetByName, setErrorInGetByName] = useState("");
