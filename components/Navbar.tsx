@@ -5,6 +5,8 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
+      <a className={styles.navbarTag} href='https://prasannafurrlpagerouter.vercel.app/' target='blank' title='Click here for Better Serve side Rendering Optimized Nextjs app '>Hover Here</a>
+
       <div className={styles.navbarContainer}>
         <div className={styles.navbarLogo}>Furrl</div>
         <div className={styles.navbarIcons}>

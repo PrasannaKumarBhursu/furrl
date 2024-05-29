@@ -5,6 +5,8 @@
     background-color: white;
     padding: 10px 20px;
     padding-right: 50px;
+    display: flex;
+    align-items: center;
     z-index: 1000;
     border-bottom: 1px solid #ccc;
   }
@@ -13,6 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
+  }
+
+  .navbarTag{
+    color: rgb(61, 53, 53);
+    font-weight: bold;
+    text-decoration: none;
   }
   
   .navbarLogo {
